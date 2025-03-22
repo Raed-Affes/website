@@ -347,3 +347,18 @@ nav ul li a:hover {
     height: 100%;
     transition: width 1s ease;
 }
+
+/* Circular Profile Image */
+.header .profile-img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for a professional look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .profile-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhances the shadow on hover */
+}
